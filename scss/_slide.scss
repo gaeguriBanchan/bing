@@ -1,0 +1,16 @@
+.slide {
+  .slide-goods {
+    .slide-goods-title {
+    }
+    .slide-layout {
+      display: flex;
+      > img {
+      }
+      .slide-goods-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}
