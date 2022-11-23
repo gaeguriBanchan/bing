@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("font/font.css");
+
+@import url("/css/font/font.css");
+@font-face {
+  font-family: "Binggrae";
+  src: url("../css/font/Binggrae.ttf");
+}
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: url("../css/font/Binggrae-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -185,6 +195,20 @@ body {
 /* Visual */
 /* Search */
 /* Slide */
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: url("../css/font/Binggrae-Bold.ttf");
+}
+.slide .slide-goods .slide-layout {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slide .slide-goods .slide-layout .slide-goods-list {
+  display: flex;
+}
+
 /* Qna */
 /* Report */
-/* Footer *//*# sourceMappingURL=main.css.map */
+/* Footer */
