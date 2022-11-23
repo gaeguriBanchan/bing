@@ -1,0 +1,57 @@
+.report {
+    margin-top: 140px;
+    .report-innner {
+        padding: 0 170px;
+        .report-title {
+            font-family: 'binggrae-bold';
+            font-size: 38px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .report-main {
+            display: flex;
+            justify-content: space-between;
+            .report-main-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .report-main-right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@at-root .report-box {
+    vertical-align: 0px;
+    > p {
+        font-size: 20px;
+        margin-bottom: 34px;
+    }
+    > span {                    
+        display: block;
+        width: 160px;
+        height: 43px;
+        background: #e5372b;
+        color: #ffffff;
+        box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 3%);
+        border-radius: 21.5px;
+        line-height: 43px;
+        margin-top: 34px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+}
+
+// 공통클래스
+.report-box {
+    width: 635px;
+    height: 230px;
+    border-radius: 30px;
+	background: #f9f9f9;
+    box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
+    text-align: center;
+}

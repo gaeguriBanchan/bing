@@ -3,17 +3,15 @@
 @import "variables";
 @import "mixin";
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("/css/font/font.css");
 
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap');
 @font-face {
-  font-family: "Binggrae";
-  src: url("../css/font/Binggrae.ttf");
+  font-family: 'binggrae';
+  src: url('../css/font/Binggrae.ttf') format('truetype')
 }
 @font-face {
-  font-family: "Binggrae-Bold";
-  src: url("../css/font/Binggrae-Bold.ttf");
+  font-family: 'binggrae-bold';
+  src: url('../css/font/Binggrae-Bold.ttf') format('truetype')
 }
 
 * {
@@ -37,12 +35,12 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
   font-size: 14px;
-  color: #000;
+  color: #1f1f1f;
   line-height: 1.14;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -1.26px;
   word-break: break-all;
 }
 // 공통클래스
@@ -67,7 +65,6 @@ body {
   position: relative;
   display: block;
 }
-
 /* Header */
 @import "header";
 /* Visual */
