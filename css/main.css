@@ -1,17 +1,18 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("../css/font/font.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul {
+ul,
+li {
   list-style: none;
 }
 
 a {
-  color: #333;
+  color: #000;
   text-decoration: none;
 }
 
@@ -25,15 +26,15 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  color: #1f1f1f;
+  line-height: 1.14;
   font-weight: 400;
-  color: #000;
+  letter-spacing: 0;
+  word-break: break-all;
 }
 
-/* 공통요소 */
 .clearfix::after {
   content: "";
   position: relative;
@@ -42,7 +43,15 @@ body {
   clear: both;
 }
 
-/* 레이아웃 */
+.inner {
+  font-family: "binggraeregular";
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
 .wrap {
   position: relative;
   display: block;
@@ -50,7 +59,22 @@ body {
 
 /* Header */
 /* Visual */
+/* Search */
 /* Slide */
 /* Qna */
+.qna .qna-inner {
+  padding: 0 170px;
+  height: 360px;
+}
+.qna .qna-inner .qna-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+.qna .qna-inner .qna-main {
+  border-radius: 30px;
+  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+}
+
 /* Report */
-/* Footer *//*# sourceMappingURL=main.css.map */
+/* Footer */
