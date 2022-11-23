@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  z-index: 9999;
+  .header-top {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 80px;
+    .header-link {
+      display: flex;
+      justify-content: flex-end;
+      line-height: 30px;
+      cursor: pointer;
+      > li {
+        position: relative;
+        padding: 0 10px;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 10px;
+          width: 1px;
+          height: 10px;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+        &:first-child::before {
+          content: none;
+        }
+      }
+    }
+  }
+  .header-main {
+    padding: 40px 20px;
+    background: yellow;
+    .header-logo {
+    }
+    .nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+    }
+    .header-lang {
+    }
+  }
+}
