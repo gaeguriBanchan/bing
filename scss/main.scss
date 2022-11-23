@@ -3,6 +3,7 @@
 @import "variables";
 @import "mixin";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap');
 @font-face {
   font-family: 'binggrae';
@@ -12,6 +13,7 @@
   font-family: 'binggrae-bold';
   src: url('../css/font/Binggrae-Bold.ttf') format('truetype')
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +58,8 @@ body {
   max-width: 1650px;
   margin: 0 auto;
 }
+
+
 // 전체레이아웃
 .wrap {
   position: relative;
