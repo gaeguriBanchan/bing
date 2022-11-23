@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap");
-@import url("../css/font/font.css");
+@font-face {
+  font-family: "binggrae";
+  src: url("../css/font/Binggrae.ttf") format("truetype");
+}
+@font-face {
+  font-family: "binggrae-bold";
+  src: url("../css/font/Binggrae-Bold.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +38,7 @@ body {
   color: #1f1f1f;
   line-height: 1.14;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -1.26px;
   word-break: break-all;
 }
 
@@ -44,7 +51,6 @@ body {
 }
 
 .inner {
-  font-family: "binggraeregular";
   position: relative;
   display: block;
   width: 100%;
@@ -67,6 +73,7 @@ body {
   height: 360px;
 }
 .qna .qna-inner .qna-title {
+  font-family: "binggrae-bold";
   text-align: center;
   font-size: 38px;
   margin-bottom: 40px;
@@ -74,6 +81,148 @@ body {
 .qna .qna-inner .qna-main {
   border-radius: 30px;
   box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  padding: 90px 45px 60px 45px;
+}
+.qna .qna-inner .qna-main .qna-main-top {
+  display: flex;
+  justify-content: space-between;
+}
+.qna .qna-inner .qna-main .qna-main-top .mail {
+  width: 590px;
+  height: 325px;
+  background: url(../images/main/sec04_backimg01.png) no-repeat center;
+  border-radius: 30px;
+  padding-left: 45px;
+  padding-top: 55px;
+}
+.qna .qna-inner .qna-main .qna-main-top .mail > h2 {
+  font-family: "binggrae-bold";
+  font-size: 32px;
+  margin-bottom: 33px;
+}
+.qna .qna-inner .qna-main .qna-main-top .mail > p {
+  font-size: 16px;
+  padding: 5px 0;
+}
+.qna .qna-inner .qna-main .qna-main-top .mail > span {
+  display: block;
+  width: 160px;
+  height: 43px;
+  background: #e5372b;
+  color: #ffffff;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
+  border-radius: 21.5px;
+  text-align: center;
+  line-height: 43px;
+  margin-top: 70px;
+}
+.qna .qna-inner .qna-main .qna-main-top .call {
+  width: 590px;
+  height: 325px;
+  background: url(../images/main/sec04_backimg02.png);
+  border-radius: 30px;
+  padding-left: 45px;
+  padding-top: 55px;
+}
+.qna .qna-inner .qna-main .qna-main-top .call > h2 {
+  font-family: "binggrae-bold";
+  font-size: 32px;
+}
+.qna .qna-inner .qna-main .qna-main-top .call > a {
+  font-family: "Poppins";
+  display: block;
+  font-size: 46.5px;
+  font-weight: 600;
+  margin: 33px 0;
+}
+.qna .qna-inner .qna-main .qna-main-top .call .call-text-day {
+  display: block;
+  margin-right: 15px;
+  font-size: 16px;
+  float: left;
+}
+.qna .qna-inner .qna-main .qna-main-top .call .call-text-time {
+  display: block;
+  color: #e0462e;
+  font-size: 16px;
+  font-weight: 500;
+  float: left;
+}
+.qna .qna-inner .qna-main .qna-main-bottom .qna-txt {
+  padding-top: 57px;
+  padding-bottom: 35px;
+}
+.qna .qna-inner .qna-main .qna-main-bottom .qna-txt > h2 {
+  font-family: "binggrae-bold";
+  font-size: 23px;
+  float: left;
+  line-height: 43px;
+}
+.qna .qna-inner .qna-main .qna-main-bottom .qna-txt > button {
+  width: 160px;
+  height: 43px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: solid 1px rgba(224, 223, 226, 0.6);
+  border-radius: 21.5px;
+  float: right;
+  background: transparent;
+}
+.qna .qna-inner .qna-main .qna-main-bottom .qna-txt > button:hover {
+  background: #e5372b;
+  color: #ffffff;
+}
+
+.question {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.question > li {
+  position: relative;
+  margin-bottom: 10px;
+}
+.question > li:nth-child(5) {
+  margin-bottom: 0px;
+}
+.question > li:nth-child(6) {
+  margin-bottom: 0px;
+}
+.question > li:hover {
+  font-weight: 600;
+  transition: transform 0.5s;
+}
+.question > li > a > span {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  content: "";
+  width: 47px;
+  height: 47px;
+  background: #dd462e url("../images/main/link_arrow01.png") no-repeat center;
+  border-radius: 30px;
+  transition: transform 0.5s;
+  transform: scale(0);
+}
+.question > li:hover > a > span {
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+.question > li > a > i {
+  font-style: normal;
+}
+
+.box {
+  display: block;
+  width: 586px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 30px;
+  background: #f9f9f9;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  font-size: 18px;
+  padding-left: 22px;
 }
 
 /* Report */
