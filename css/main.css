@@ -68,9 +68,11 @@ body {
 /* Search */
 /* Slide */
 /* Qna */
+.qna {
+  margin-top: 140px;
+}
 .qna .qna-inner {
   padding: 0 170px;
-  height: 360px;
 }
 .qna .qna-inner .qna-title {
   font-family: "binggrae-bold";
@@ -213,7 +215,7 @@ body {
   font-style: normal;
 }
 
-.box {
+.qna-box {
   display: block;
   width: 586px;
   height: 80px;
@@ -226,4 +228,61 @@ body {
 }
 
 /* Report */
+.report {
+  margin-top: 140px;
+}
+.report .report-innner {
+  padding: 0 170px;
+}
+.report .report-innner .report-title {
+  font-family: "binggrae-bold";
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.report .report-innner .report-main {
+  display: flex;
+  justify-content: space-between;
+}
+.report .report-innner .report-main .report-main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.report .report-innner .report-main .report-main-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.report-box {
+  vertical-align: 0px;
+}
+.report-box > p {
+  font-size: 20px;
+  margin-bottom: 34px;
+}
+.report-box > span {
+  display: block;
+  width: 160px;
+  height: 43px;
+  background: #e5372b;
+  color: #ffffff;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
+  border-radius: 21.5px;
+  line-height: 43px;
+  margin-top: 34px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.report-box {
+  width: 635px;
+  height: 230px;
+  border-radius: 30px;
+  background: #f9f9f9;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  text-align: center;
+}
+
 /* Footer */
