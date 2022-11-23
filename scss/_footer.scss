@@ -1,0 +1,91 @@
+.footer {
+    margin-top: 140px;
+    background: #1b1b1b;
+    padding: 50px 50px 30px 50px;
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        .footer-top-link {
+            > ul { 
+                > li {
+                    float: left;
+                    margin-right: 20px;
+                    > a {
+                        color: #fff;
+                    }                
+                }
+                > li:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .footer-middle {
+        padding-top: 23px;
+        padding-bottom: 115px;
+        > ul {
+            > li {
+                color: #bbbbbb;
+                font-size: 17px;
+                padding: 13px 0;
+            }
+        }
+    }
+    .footer-bottom {
+        > p {
+            font-size: 14px;
+            color: #494846;
+            float: left;
+        }
+        .familysite {
+            float: right;
+            > ul {
+                float: left;
+                > li {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 70px;
+                    background: #1f1f1f;
+                    float: left;
+                    margin-right: 15px;
+                }
+            }
+            .flagstore {
+                position: relative;
+                width: 355px;
+                height: 70px;
+                background: #1f1f1f;
+                border-radius: 35px;
+                line-height: 70px;
+                float: left;
+                > a {
+                    > img {
+                        float: left;
+                        margin: 10px 20px;
+                    }
+                    > p {
+                        font-size: 12px;
+                        color: rgba(153, 153, 153, 0.67);
+                        float: left;
+                        > strong {
+                            color: rgba(255, 255, 255, 0.67);;
+                        }
+                    }
+                    > p::after {
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                        content: "";
+                        height: 6px;
+                        width: 12px;                   
+                        background: url("../images/layout/select_btn01.png") no-repeat center;
+                        transform: rotate(-90deg);
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
