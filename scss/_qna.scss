@@ -16,12 +16,12 @@
 				display: flex;
 				justify-content: space-between;
 				.mail {
-					width: 590px;
+					width: 48.5%;
 					height: 325px;
 					background: url(../images/main/sec04_backimg01.png) no-repeat center;
+					background-size: cover;
 					border-radius: 30px;
-					padding-left: 45px;
-					padding-top: 55px;
+					padding: 55px 45px 55px 45px;
 					> h2 { 
 						font-family: 'binggrae-bold';
 						font-size: 32px;
@@ -45,12 +45,12 @@
 					}
 				}
 				.call {
-					width: 590px;
+					width: 48.5%;
 					height: 325px;
-					background: url(../images/main/sec04_backimg02.png);
+					background: url(../images/main/sec04_backimg02.png) no-repeat center;
+					background-size: cover;
 					border-radius: 30px;
-					padding-left: 45px;
-					padding-top: 55px;
+					padding: 55px 45px 55px 45px;
 					> h2 {
 						font-family: 'binggrae-bold';
 						font-size: 32px;
@@ -81,6 +81,7 @@
 				.qna-txt {
 					padding-top: 57px;
 					padding-bottom: 35px;
+					gap: 10px;
 					> h2 {
 						font-family: 'binggrae-bold';
 						font-size: 23px;
@@ -149,7 +150,7 @@
 // 공통클래스
 .qna-box {
 	display: block;
-	width: 586px;
+	width: 48.5%;
 	height: 80px;
 	line-height: 80px;
 	border-radius: 30px;
@@ -157,4 +158,119 @@
 	box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
 	font-size: 18px;
 	padding-left: 22px;
+}
+
+@media screen and (max-width: 1600px) {
+	.mail {
+		background-position: center right 20% !important;
+	}
+	.call {
+		background-position: center right 20% !important;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.mail {
+		> h2 {
+			font-size: 28px !important;
+		}
+		> p {
+			font-size: 15px !important;
+		}
+	}
+	.call {
+		> h2 {
+			font-size: 28px !important;
+		}
+		> a {
+			font-size: 38px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.mail { 
+		> p {
+			width: 150px !important;
+		}
+		> span {
+			margin-top: 40px !important;
+		}
+	}
+	.qna-box {
+		height: 47px !important;
+		line-height: 47px !important; 
+		> a {
+			font-size: 14px !important;
+		}
+		> a > span {
+			top: 9px !important;
+			right: 15px !important;
+			width: 30px !important;
+			height: 30px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.qna-txt > h2 {
+		font-size: 20px !important;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.qna-main-top {
+		flex-wrap: wrap !important;
+	}
+	.mail {
+		padding: 30px !important;
+		width: 100% !important;
+		height: 150px !important;
+		background-position: center bottom 30% !important;
+		margin-bottom: 20px !important;
+		> h2 {
+			font-size: 18px !important;
+		}
+		> p {
+			display: none !important;
+		}
+		> span {
+			margin-top: 20px !important;
+		}
+	}
+	.call {
+		padding: 30px !important;
+		width: 100% !important;
+		height: 150px !important;
+		background-position: center bottom 30% !important;
+		> h2 {
+			font-size: 18px !important;
+		}
+		> span {
+			display: none !important;
+		}
+	}
+	.qna-txt {
+		text-align: center !important;
+		> h2 {
+			width: 100% !important;
+		}
+		> button {
+			float: none !important;
+		}
+	}
+	.qna-box {
+		width: 100%;
+	}
+	.qna-box:last-child {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.qna-txt {
+		> h2 {
+			font-size: 18px !important;
+		}
+	}
 }

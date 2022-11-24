@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
@@ -45,6 +46,8 @@ body {
   color: #000;
   line-height: 30px;
   font-weight: 400;
+
+
   letter-spacing: -0.09em;
 
   word-break: break-all;
@@ -449,12 +452,12 @@ body .fixed {
   justify-content: space-between;
 }
 .qna .qna-inner .qna-main .qna-main-top .mail {
-  width: 590px;
+  width: 48.5%;
   height: 325px;
   background: url(../images/main/sec04_backimg01.png) no-repeat center;
+  background-size: cover;
   border-radius: 30px;
-  padding-left: 45px;
-  padding-top: 55px;
+  padding: 55px 45px 55px 45px;
 }
 .qna .qna-inner .qna-main .qna-main-top .mail > h2 {
   font-family: "binggrae-bold";
@@ -478,12 +481,12 @@ body .fixed {
   margin-top: 70px;
 }
 .qna .qna-inner .qna-main .qna-main-top .call {
-  width: 590px;
+  width: 48.5%;
   height: 325px;
-  background: url(../images/main/sec04_backimg02.png);
+  background: url(../images/main/sec04_backimg02.png) no-repeat center;
+  background-size: cover;
   border-radius: 30px;
-  padding-left: 45px;
-  padding-top: 55px;
+  padding: 55px 45px 55px 45px;
 }
 .qna .qna-inner .qna-main .qna-main-top .call > h2 {
   font-family: "binggrae-bold";
@@ -512,6 +515,7 @@ body .fixed {
 .qna .qna-inner .qna-main .qna-main-bottom .qna-txt {
   padding-top: 57px;
   padding-bottom: 35px;
+  gap: 10px;
 }
 .qna .qna-inner .qna-main .qna-main-bottom .qna-txt > h2 {
   font-family: "binggrae-bold";
@@ -576,7 +580,7 @@ body .fixed {
 
 .qna-box {
   display: block;
-  width: 586px;
+  width: 48.5%;
   height: 80px;
   line-height: 80px;
   border-radius: 30px;
@@ -586,8 +590,108 @@ body .fixed {
   padding-left: 22px;
 }
 
+@media screen and (max-width: 1600px) {
+  .mail {
+    background-position: center right 20% !important;
+  }
+  .call {
+    background-position: center right 20% !important;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .mail > h2 {
+    font-size: 28px !important;
+  }
+  .mail > p {
+    font-size: 15px !important;
+  }
+  .call > h2 {
+    font-size: 28px !important;
+  }
+  .call > a {
+    font-size: 38px !important;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .mail > p {
+    width: 150px !important;
+  }
+  .mail > span {
+    margin-top: 40px !important;
+  }
+  .qna-box {
+    height: 47px !important;
+    line-height: 47px !important;
+  }
+  .qna-box > a {
+    font-size: 14px !important;
+  }
+  .qna-box > a > span {
+    top: 9px !important;
+    right: 15px !important;
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .qna-txt > h2 {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .qna-main-top {
+    flex-wrap: wrap !important;
+  }
+  .mail {
+    padding: 30px !important;
+    width: 100% !important;
+    height: 150px !important;
+    background-position: center bottom 30% !important;
+    margin-bottom: 20px !important;
+  }
+  .mail > h2 {
+    font-size: 18px !important;
+  }
+  .mail > p {
+    display: none !important;
+  }
+  .mail > span {
+    margin-top: 20px !important;
+  }
+  .call {
+    padding: 30px !important;
+    width: 100% !important;
+    height: 150px !important;
+    background-position: center bottom 30% !important;
+  }
+  .call > h2 {
+    font-size: 18px !important;
+  }
+  .call > span {
+    display: none !important;
+  }
+  .qna-txt {
+    text-align: center !important;
+  }
+  .qna-txt > h2 {
+    width: 100% !important;
+  }
+  .qna-txt > button {
+    float: none !important;
+  }
+  .qna-box {
+    width: 100%;
+  }
+  .qna-box:last-child {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .qna-txt > h2 {
+    font-size: 18px !important;
+  }
+}
 /* Report */
-
 
 .report {
   margin-top: 140px;
@@ -617,13 +721,14 @@ body .fixed {
 }
 
 .report-box {
+  cursor: pointer;
   vertical-align: 0px;
 }
-.report-box > p {
+.report-box p {
   font-size: 20px;
   margin-bottom: 34px;
 }
-.report-box > span {
+.report-box span {
   display: block;
   width: 160px;
   height: 43px;
@@ -646,6 +751,41 @@ body .fixed {
   text-align: center;
 }
 
+@media screen and (max-width: 1650px) {
+  .report-main {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1455px) {
+  .report-main-left > p {
+    font-size: 16px;
+  }
+  .report-main-right > p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .report-main-left > p {
+    font-size: 14px;
+  }
+  .report-main-right > p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .report-main {
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+  }
+  .report-main-left {
+    width: 80%;
+    height: 150px;
+  }
+  .report-main-right {
+    width: 80%;
+    height: 150px;
+  }
+}
 /* Footer */
 .footer {
   margin-top: 140px;
@@ -655,13 +795,15 @@ body .fixed {
 .footer .footer-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer .footer-top .footer-top-link > ul > li {
   float: left;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .footer .footer-top .footer-top-link > ul > li > a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 500;
 }
 .footer .footer-top .footer-top-link > ul > li:last-child {
   margin-right: 0;
@@ -671,14 +813,20 @@ body .fixed {
   padding-bottom: 115px;
 }
 .footer .footer-middle > ul > li {
-  color: #bbbbbb;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 17px;
-  padding: 13px 0;
+  font-weight: 300;
+  line-height: 30px;
+}
+.footer .footer-middle > ul > li:last-child {
+  padding-top: 10px;
 }
 .footer .footer-bottom > p {
   font-size: 14px;
-  color: #494846;
+  letter-spacing: -0.15px;
+  color: rgba(255, 255, 255, 0.2);
   float: left;
+  line-height: 70px;
 }
 .footer .footer-bottom .familysite {
   float: right;
@@ -694,7 +842,7 @@ body .fixed {
   line-height: 70px;
   background: #1f1f1f;
   float: left;
-  margin-right: 15px;
+  margin: 0 7px;
 }
 .footer .footer-bottom .familysite .flagstore {
   position: relative;
@@ -704,13 +852,14 @@ body .fixed {
   border-radius: 35px;
   line-height: 70px;
   float: left;
+  margin-left: 60px;
 }
 .footer .footer-bottom .familysite .flagstore > a > img {
   float: left;
-  margin: 10px 20px;
+  margin: 10px 12px;
 }
 .footer .footer-bottom .familysite .flagstore > a > p {
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(153, 153, 153, 0.67);
   float: left;
 }
@@ -729,4 +878,63 @@ body .fixed {
   float: right;
 }
 
+
+@media screen and (max-width: 1000px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer-top .footer-top-logo {
+    margin-bottom: 20px;
+  }
+  .footer-top .footer-top-link {
+    margin-bottom: 40px;
+  }
+  .footer-middle {
+    text-align: center;
+  }
+  .footer-middle > ul > li {
+    font-size: 14px !important;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+/* fix menu*/
+.fixmenu {
+  position: fixed;
+  display: block;
+  right: 30px;
+  bottom: 60px;
+}
+.fixmenu .fixmenu-top {
+  display: block;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.fixmenu .fixmenu-bottom {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #000000 url(../images/layout/fix_arrow.png) no-repeat center;
+  box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
+  margin-top: 5px;
+  cursor: pointer;
+  border: 0;
+}
+.fixmenu .fixmenu-bottom:active {
+  transform: rotate(180deg);
+}
 
