@@ -1,6 +1,7 @@
 .header {
   position: relative;
   z-index: 9999;
+
   .header-top {
     border-bottom: 1px solid #e7e7e7;
     padding: 0 80px;
@@ -36,19 +37,19 @@
     .header-logo {
     }
     .nav {
-      display: block;
       .gnb {
         display: flex;
         align-items: center;
         justify-content: center;
         > li {
+          position: relative;
+          padding: 48px 50px 0 0;
           > a {
             display: block;
             position: relative;
             white-space: nowrap;
             font-size: 16px;
-            line-height: 115px;
-            padding-right: 30px;
+            padding: 0 0 40px;
             &:hover {
               color: #e0462e;
             }
@@ -70,10 +71,33 @@
                 content: "";
                 position: absolute;
                 left: 0;
-                bottom: 0;
+                bottom: -42px;
                 width: 100%;
                 height: 2px;
                 background: #e0462e;
+              }
+            }
+          }
+          .depth2 {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+
+            // opacity: 0;
+            // visibility: hidden;
+            padding-top: 20px;
+
+            > li {
+              a {
+                padding: 7px 0;
+                display: block;
+                line-height: 1.5;
+                text-align: left;
+                white-space: nowrap;
+                &:hover {
+                  color: #e0462e;
+                }
               }
             }
           }
@@ -86,8 +110,6 @@
         margin-right: 33px;
         position: relative;
         cursor: pointer;
-        font-size: 14px;
-        line-height: 30px;
         > p {
           display: flex;
           align-items: center;

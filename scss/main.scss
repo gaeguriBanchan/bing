@@ -4,6 +4,7 @@
 @import "mixin";
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("font/font.css");
 * {
   margin: 0;
@@ -26,7 +27,7 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-size: 14px;
   color: #000;
   line-height: 1.14;
@@ -49,7 +50,6 @@ body {
   max-width: 1650px;
   margin: 0 auto;
 }
-
 
 // 전체레이아웃
 .wrap {
