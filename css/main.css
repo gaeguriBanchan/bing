@@ -47,7 +47,6 @@ body {
   line-height: 30px;
   font-weight: 400;
 
-
   letter-spacing: -0.09em;
 
   word-break: break-all;
@@ -360,6 +359,10 @@ body .fixed {
   justify-content: center;
 }
 
+.slide .inner {
+  max-width: 1750px;
+  width: 100%;
+}
 .slide .slide-goods .slide-goods-title {
   font-family: "Binggrae-Bold";
   font-size: 38px;
@@ -369,7 +372,7 @@ body .fixed {
 .slide .slide-goods .slide-layout {
   display: flex;
   align-items: center;
-  max-width: 1650px;
+  max-width: 1750px;
   max-height: 300px;
   flex-direction: row;
   justify-content: center;
@@ -387,8 +390,8 @@ body .fixed {
 }
 .slide .slide-goods .slide-layout .slide-goods-list > li > img {
   width: 100%;
-  max-width: 240px;
-  max-height: 240px;
+  max-width: 242px;
+  max-height: 242px;
   margin-bottom: 12px;
 }
 .slide .slide-goods .slide-layout .slide-goods-list > li > p {
@@ -406,11 +409,13 @@ body .fixed {
   margin-bottom: 48px;
 }
 .slide .slide-brand .slide-layout {
-  display: flex;
   align-items: center;
+  max-width: 1750px;
   max-height: 300px;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
+  flex-shrink: 1;
 }
 .slide .slide-brand .slide-layout > img {
   margin: 48px;
@@ -419,16 +424,38 @@ body .fixed {
 }
 .slide .slide-brand .slide-layout .slide-brand-list {
   display: flex;
-  gap: 18px;
-}
-.slide .slide-brand .slide-layout .slide-brand-list > li > a > img {
   width: 100%;
-  max-width: 240px;
-  max-height: 240px;
+  gap: 18px;
+  justify-content: center;
+}
+.slide .slide-brand .slide-layout .slide-brand-list > li {
+  display: flex;
+  width: 100%;
+  width: 242px;
+  height: 250px;
   border: 1px solid #edecef;
   border-radius: 30px;
 }
+.slide .slide-brand .slide-layout .slide-brand-list > li > a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+.slide .slide-brand .slide-layout .slide-brand-list > li > a > img {
+  width: 60%;
+}
 
+@media screen and (max-width: 768px) {
+  .slide-layout > img {
+    display: none;
+  }
+  .slide-goods-list,
+.slide-brand-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 /* Qna */
 .qna {
   margin-top: 140px;
@@ -692,7 +719,6 @@ body .fixed {
   }
 }
 /* Report */
-
 .report {
   margin-top: 140px;
 }
@@ -876,8 +902,6 @@ body .fixed {
   background: url("../images/layout/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
   float: right;
-}
-
 
 @media screen and (max-width: 1000px) {
   .footer-top {
