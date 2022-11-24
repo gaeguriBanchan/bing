@@ -3,9 +3,8 @@
 @import "variables";
 @import "mixin";
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url("font/font.css");
+@import "font/font";
+
 * {
   margin: 0;
   padding: 0;
@@ -25,15 +24,23 @@ img {
 }
 html {
   font-size: 16px;
+  .fixed {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 body {
   font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-size: 14px;
   color: #000;
-  line-height: 1.14;
+  line-height: 30px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.09em;
   word-break: break-all;
+  .fixed {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 // 공통클래스
 .clearfix::after {

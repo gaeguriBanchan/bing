@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: url("../css/font/Binggrae-Bold.ttf");
+}
+.slide {
+  .slide-goods {
+    .slide-goods-title {
+      // font-family: "Binggrae-Bold";
+    }
+    .slide-layout {
+      > img {
+      }
+      max-width: 1500px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .slide-goods-list {
+        display: flex;
+      }
+    }
+  }
+}
