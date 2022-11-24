@@ -5,6 +5,7 @@
 
 @import "font/font";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -30,12 +31,14 @@ html {
   }
 }
 body {
+
   font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-size: 14px;
   color: #000;
   line-height: 30px;
   font-weight: 400;
   letter-spacing: -0.09em;
+
   word-break: break-all;
   .fixed {
     height: 100%;
@@ -63,7 +66,6 @@ body {
   position: relative;
   display: block;
 }
-
 /* Header */
 @import "header";
 /* Visual */
