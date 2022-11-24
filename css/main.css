@@ -1,14 +1,12 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
 @font-face {
-  font-family: "binggrae";
-  src: url("../css/font/Binggrae.ttf") format("truetype");
+  font-family: "Binggrae";
+  src: url("../css/font/Binggrae.ttf");
 }
 @font-face {
-  font-family: "binggrae-bold";
-  src: url("../css/font/Binggrae-Bold.ttf") format("truetype");
+  font-family: "Binggrae-Bold";
+  src: url("../css/font/Binggrae-Bold.ttf");
 }
 * {
   margin: 0;
@@ -42,13 +40,10 @@ html .fixed {
 body {
   font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-size: 14px;
-
   color: #000;
   line-height: 30px;
   font-weight: 400;
-
   letter-spacing: -0.09em;
-
   word-break: break-all;
 }
 body .fixed {
@@ -902,6 +897,7 @@ body .fixed {
   background: url("../images/layout/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
   float: right;
+}
 
 @media screen and (max-width: 1000px) {
   .footer-top {
@@ -961,4 +957,3 @@ body .fixed {
 .fixmenu .fixmenu-bottom:active {
   transform: rotate(180deg);
 }
-
