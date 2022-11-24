@@ -26,12 +26,13 @@
 }
 
 @at-root .report-box {
+    cursor: pointer;
     vertical-align: 0px;
-    > p {
+    p {
         font-size: 20px;
         margin-bottom: 34px;
     }
-    > span {                    
+    span {                    
         display: block;
         width: 160px;
         height: 43px;
@@ -54,4 +55,51 @@
 	background: #f9f9f9;
     box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
     text-align: center;
+}
+
+@media screen and (max-width: 1650px) {
+    .report-main {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1455px) {
+    .report-main-left {
+        > p {
+            font-size: 16px;
+        }
+    }
+    .report-main-right {
+        > p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .report-main-left {
+        > p {
+            font-size: 14px;
+        }
+    }
+    .report-main-right {
+        > p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .report-main {
+        flex-wrap: wrap;
+        justify-content: space-around !important;
+    }
+    .report-main-left {
+        width: 80%;
+        height: 150px;
+    }
+    .report-main-right {
+        width: 80%;
+        height: 150px;
+    }
 }

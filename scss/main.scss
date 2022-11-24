@@ -3,16 +3,8 @@
 @import "variables";
 @import "mixin";
 
+@import "font/font";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap');
-@font-face {
-  font-family: 'binggrae';
-  src: url('../css/font/Binggrae.ttf') format('truetype')
-}
-@font-face {
-  font-family: 'binggrae-bold';
-  src: url('../css/font/Binggrae-Bold.ttf') format('truetype')
-}
 
 * {
   margin: 0;
@@ -33,15 +25,25 @@ img {
 }
 html {
   font-size: 16px;
+  .fixed {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 body {
-  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-size: 14px;
-  color: #1f1f1f;
-  line-height: 1.14;
+  color: #000;
+  line-height: 30px;
   font-weight: 400;
-  letter-spacing: -1.26px;
+  letter-spacing: -0.09em;
+
   word-break: break-all;
+  .fixed {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 // 공통클래스
 .clearfix::after {
@@ -58,7 +60,6 @@ body {
   max-width: 1650px;
   margin: 0 auto;
 }
-
 
 // 전체레이아웃
 .wrap {
@@ -79,3 +80,5 @@ body {
 @import "report";
 /* Footer */
 @import "footer";
+/* fix menu*/
+@import "fixmenu";
