@@ -1,7 +1,37 @@
 .header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   z-index: 9999;
+  .fixed {
+    background-color: #fff;
+    position: fixed;
+    /* border-bottom: 1px solid #dfebf9; */
+  }
+
+  &:hover .header-bg {
+    top: 0;
+    transition: all 0.8s;
+  }
+
+  &:hover .depth2 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: all 0.8s 0.4s;
+  }
+  .header-bg {
+    position: absolute;
+    left: 0;
+    top: -573px;
+    width: 100%;
+    height: 573px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0px 2px 9.8px 0.2px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+  }
   .header-top {
+    position: relative;
     border-bottom: 1px solid #e7e7e7;
     padding: 0 80px;
     .header-link {
@@ -28,6 +58,7 @@
     }
   }
   .header-main {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,44 +67,71 @@
     .header-logo {
     }
     .nav {
-      display: block;
       .gnb {
         display: flex;
         align-items: center;
         justify-content: center;
         > li {
+          position: relative;
+          padding: 48px 50px 0 0;
+          &:hover > a {
+            color: #e0462e;
+          }
+          &:hover > a span {
+            &::before {
+              content: "";
+              position: absolute;
+              right: -10px;
+              top: 50%;
+              transform: translateY(calc(-50% - 8px));
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              background: #e0462e;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -42px;
+              width: 100%;
+              height: 2px;
+              background: #e0462e;
+            }
+          }
           > a {
             display: block;
             position: relative;
             white-space: nowrap;
             font-size: 16px;
-            line-height: 115px;
-            padding-right: 30px;
+            padding: 0 0 40px;
             &:hover {
               color: #e0462e;
             }
             span {
               position: relative;
               display: block;
-              &::before {
-                content: "";
-                position: absolute;
-                right: -10px;
-                top: 50%;
-                transform: translateY(calc(-50% - 8px));
-                width: 5px;
-                height: 5px;
-                border-radius: 50%;
-                background: #e0462e;
-              }
-              &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 2px;
-                background: #e0462e;
+            }
+          }
+          .depth2 {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            padding-top: 20px;
+
+            > li {
+              a {
+                padding: 7px 0;
+                display: block;
+                line-height: 1.5;
+                text-align: left;
+                white-space: nowrap;
+                &:hover {
+                  color: #e0462e;
+                }
               }
             }
           }
@@ -82,12 +140,11 @@
     }
     .header-right {
       display: flex;
+      align-items: center;
       .lang {
         margin-right: 33px;
         position: relative;
         cursor: pointer;
-        font-size: 14px;
-        line-height: 30px;
         > p {
           display: flex;
           align-items: center;
@@ -103,10 +160,27 @@
             line-height: 1;
           }
         }
+        > ul {
+          background: yellow;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 130%;
+          text-align: center;
+          // display: none;
+          background-color: #fff;
+          border-radius: 20px;
+          padding: 10px 0;
+          box-shadow: 0px 3px 7px 0 rgb(0 0 0 / 5%);
+          > li a {
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: -0.5px;
+          }
+        }
       }
       .hamburger {
         width: 26px;
-        height: 18px;
         position: relative;
         > a {
           display: block;
