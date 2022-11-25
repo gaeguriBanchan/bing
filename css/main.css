@@ -684,6 +684,7 @@ body {
   display: block;
   right: 30px;
   bottom: 60px;
+  z-index: 99999;
 }
 .fixmenu .fixmenu-top {
   display: block;
@@ -704,11 +705,12 @@ body {
   height: 55px;
   border-radius: 50%;
   background: #000000 url(../images/layout/fix_arrow.png) no-repeat center;
+  transform: rotate(180deg);
   box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
   margin-top: 5px;
   cursor: pointer;
   border: 0;
 }
 .fixmenu .fixmenu-bottom:active {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
