@@ -30,6 +30,9 @@
 					> p {
 						font-size: 16px;
 						padding: 5px 0;
+						> br {
+							display: none;
+						}
 					}
 					> span {
 						display: block;
@@ -41,7 +44,7 @@
 						border-radius: 21.5px;
 						text-align: center;
 						line-height: 43px;
-						margin-top: 70px;
+						margin-top: 30px;
 					}
 				}
 				.call {
@@ -190,11 +193,17 @@
 
 @media screen and (max-width: 1350px) {
 	.mail { 
+		> h2 {
+			margin-bottom: 10px !important	;
+		}
 		> p {
-			width: 150px !important;
+			line-height: 1.63;
+			> br {
+				display: block !important;
+			}
 		}
 		> span {
-			margin-top: 40px !important;
+			margin-top: 10px !important;
 		}
 	}
 	.qna-box {
@@ -270,7 +279,7 @@
 @media screen and (max-width: 1000px) {
 	.qna-txt {
 		> h2 {
-			font-size: 18px !important;
+			font-size: 15px !important;
 		}
 	}
 }
