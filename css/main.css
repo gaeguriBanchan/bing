@@ -781,11 +781,6 @@ body .fixed {
   text-align: center;
 }
 
-@media screen and (max-width: 1650px) {
-  .report-main {
-    gap: 40px;
-  }
-}
 @media screen and (max-width: 1455px) {
   .report-main-left > p {
     font-size: 16px;
