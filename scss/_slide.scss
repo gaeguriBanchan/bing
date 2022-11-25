@@ -1,22 +1,108 @@
-@font-face {
-  font-family: "Binggrae-Bold";
-  src: url("../css/font/Binggrae-Bold.ttf");
+.slide-layout {
+  display: flex;
+  justify-content: center;
 }
 .slide {
+  .inner {
+    max-width: 1750px;
+    width: 100%;
+  }
   .slide-goods {
     .slide-goods-title {
-      // font-family: "Binggrae-Bold";
+      font-family: "Binggrae-Bold";
+      font-size: 38px;
+      text-align: center;
+      margin-bottom: 48px;
     }
     .slide-layout {
-      > img {
-      }
-      max-width: 1500px;
       display: flex;
+      align-items: center;
+      max-width: 1750px;
+      max-height: 300px;
       flex-direction: row;
       justify-content: center;
+      width: 100%;
+      flex-shrink: 1;
+      > img {
+        margin: 48px;
+        width: 7px;
+        height: 15px;
+      }
       .slide-goods-list {
         display: flex;
+        gap: 18px;
+        > li > img {
+          width: 100%;
+          max-width: 242px;
+          max-height: 242px;
+          margin-bottom: 12px;
+        }
+        > li > p {
+          background-color: rgb(249, 249, 249);
+          padding: 14px;
+          text-align: center;
+          border-radius: 21px;
+          // margin-bottom: 172px;
+        }
       }
     }
+  }
+  .slide-brand {
+    .slide-brand-title {
+      font-family: "Binggrae-Bold";
+      font-size: 38px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 172px;
+      margin-bottom: 48px;
+    }
+    .slide-layout {
+      // display: flex;
+      align-items: center;
+      max-width: 1750px;
+      max-height: 300px;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      flex-shrink: 1;
+      > img {
+        margin: 48px;
+        width: 7px;
+        height: 15px;
+      }
+      .slide-brand-list {
+        display: flex;
+        width: 100%;
+        gap: 18px;
+        justify-content: center;
+        > li {
+          display: flex;
+          width: 100%;
+          width: 242px;
+          height: 250px;
+          border: 1px solid #edecef;
+          border-radius: 30px;
+          > a {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            > img {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide-layout > img {
+    display: none;
+  }
+  .slide-goods-list,
+  .slide-brand-list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
