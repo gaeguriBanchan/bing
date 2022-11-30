@@ -84,6 +84,7 @@
     <![endif]-->
     <!-- CSS3 적용 -->
     <script src="js/prefixfree.min.js"></script>
+    <script src="js/script.js"></script>
     <!-- css 초기화 -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -182,19 +183,19 @@
           </nav>
           <div class="header-right">
             <div class="lang">
-              <p>
+              <p class="lang-bt" id="lang-bt">
                 <span class="font-popoin">KR</span>
                 <span class="triangle">
                   <img src="images/layout/lang_btn.png" alt="" />
                 </span>
               </p>
-              <ul>
+              <ul class="lang-list" id="lang-list">
                 <li><a href="#">KR</a></li>
                 <li><a href="#">EN</a></li>
                 <li><a href="#">CN</a></li>
               </ul>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" id="hambuger-bt">
               <a href="#">
                 <span></span>
                 <span></span>
@@ -203,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="hambuger_menu">
+        <div class="hambuger_menu" id="hambuger-list">
           <div class="black_bg"></div>
           <div class="submenu">
             <ul class="depth01">
@@ -301,7 +302,7 @@
                   <span class=arrow></span>
                   <ul class="depth03">
                     <li><a href="#">FAQ</a></li>
-                    <li><a href="#">1:1</a></li>
+                    <li><a href="#">1: 1 문의하기</a></li>
                   </ul>
                   <li><a href="#">제품공급문의</a></li>
                   <span class=arrow></span>
