@@ -75,6 +75,9 @@
         width: 100%;
         gap: 18px;
         justify-content: center;
+        .mo {
+          display: none;
+        }
         > li {
           display: flex;
           width: 100%;
@@ -97,12 +100,95 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .slide-layout > img {
-    display: none;
+  .slide-goods {
+    position: relative;
+    display: block;
+    .slide-goods-title {
+      font-size: 22px !important;
+    }
+    p {
+      padding: 15px 0 !important;
+      margin: 0 !important;
+      font-size: 16px;
+      background-color: #fff !important;
+    }
+    a {
+      padding: 15px 0 !important;
+    }
+    .goods-wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+      .slide-layout {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 768px;
+        max-height: 705px;
+        margin: 0 auto;
+        flex-shrink: 1;
+        // background-color: yellow;
+        flex-shrink: 1 !important;
+
+        > img {
+          display: none;
+        }
+      }
+    }
+    .slide-goods-list {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-height: 705px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+      > li {
+        position: relative;
+        max-width: 235px;
+        height: 280px;
+        padding: 0;
+        margin: 0;
+        > img {
+          width: 100%;
+          margin: 0 !important;
+        }
+      }
+    }
   }
-  .slide-goods-list,
-  .slide-brand-list {
-    flex-wrap: wrap;
-    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .slide-brand {
+    position: relative;
+    display: block;
+    .slide-brand-title {
+      position: relative;
+      display: block;
+    }
+    > .slide-layout {
+      position: relative;
+      display: flex;
+      max-width: 768px;
+      max-height: 600px;
+      // background-color: yellow;
+      > img {
+        position: relative;
+        display: block;
+      }
+      .slide-brand-list {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .pc {
+          display: none;
+        }
+        > a {
+        }
+      }
+    }
   }
 }
