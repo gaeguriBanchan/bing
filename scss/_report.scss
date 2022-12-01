@@ -1,7 +1,8 @@
 .report {
     margin-top: 140px;
     .report-innner {
-        padding: 0 170px;
+        margin: 0 auto;
+        max-width: 1310px;
         .report-title {
             font-family: 'binggrae-bold';
             font-size: 38px;
@@ -11,6 +12,7 @@
         .report-main {
             display: flex;
             justify-content: space-between;
+            gap: 20px;
             .report-main-left {
                 display: flex;
                 flex-direction: column;
@@ -49,7 +51,9 @@
 
 // 공통클래스
 .report-box {
-    width: 635px;
+    display: block;
+    max-width: 635px;
+    width: 100%;
     height: 230px;
     border-radius: 30px;
 	background: #f9f9f9;
@@ -58,9 +62,6 @@
 }
 
 @media screen and (max-width: 1650px) {
-    .report-main {
-        gap: 40px;
-    }
 }
 
 @media screen and (max-width: 1455px) {
@@ -76,6 +77,14 @@
     }
 }
 
+@media screen and (max-width: 1450px) {
+	.report {
+		.report-innner {
+			padding: 0px 30px;
+		}
+	}
+}
+
 @media screen and (max-width: 1250px) {
     .report-main-left {
         > p {
@@ -89,17 +98,25 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 930px) {
+    .report-title {
+        font-size: 30px !important;
+    }
+}
+@media screen and (max-width: 770px) {
+    .report-title {
+        font-size: 22px !important;
+    }
     .report-main {
         flex-wrap: wrap;
         justify-content: space-around !important;
     }
     .report-main-left {
-        width: 80%;
+        width: 90%;
         height: 150px;
     }
     .report-main-right {
-        width: 80%;
+        width: 90%;
         height: 150px;
     }
 }
