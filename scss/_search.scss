@@ -1,11 +1,13 @@
 .search {
-  // display: flex;
+  position: relative;
+  display: block;
   // justify-content: center;
   margin: 0 auto;
   // width: 1020px;
   height: 140px;
   margin-bottom: 190px;
   max-width: 1020px;
+  // background-color: yellow;
 
   .search-top {
     display: flex;
