@@ -34,10 +34,11 @@
     position: relative;
     border-bottom: 1px solid #e7e7e7;
     padding: 0 80px;
+    z-index: 999999;
     .header-link {
       display: flex;
       justify-content: flex-end;
-      line-height: 30px;
+      // line-height: 30px;
       cursor: pointer;
       > li {
         position: relative;
@@ -62,8 +63,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0px 80px;
     border-bottom: 1px solid #e7e7e7;
+    z-index: 9999;
     .header-logo {
     }
     .nav {
@@ -73,7 +75,7 @@
         justify-content: center;
         > li {
           position: relative;
-          padding: 48px 50px 0 0;
+          padding: 45px 80px 0 0;
           &:hover > a {
             color: #e0462e;
           }
@@ -103,7 +105,7 @@
             display: block;
             position: relative;
             white-space: nowrap;
-            font-size: 16px;
+            font-size: 20px;
             padding: 0 0 40px;
             &:hover {
               color: #e0462e;
@@ -126,8 +128,10 @@
               a {
                 padding: 7px 0;
                 display: block;
+                font-size: 18px;
                 line-height: 1.5;
                 text-align: left;
+                letter-spacing: -0.02em;
                 white-space: nowrap;
                 &:hover {
                   color: #e0462e;
@@ -161,21 +165,23 @@
           }
         }
         > ul {
-          background: yellow;
           position: absolute;
           top: 100%;
           left: 0;
           width: 130%;
           text-align: center;
-          // display: none;
+          display: none;
           background-color: #fff;
           border-radius: 20px;
           padding: 10px 0;
           box-shadow: 0px 3px 7px 0 rgb(0 0 0 / 5%);
-          > li a {
-            font-weight: bold;
-            font-size: 16px;
-            letter-spacing: -0.5px;
+          > li {
+            display: block;
+            a {
+              font-weight: bold;
+              font-size: 16px;
+              letter-spacing: -0.5px;
+            }
           }
         }
       }
@@ -194,6 +200,91 @@
             + span {
               margin-top: 8px;
             }
+          }
+        }
+      }
+    }
+  }
+  .hambuger_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff url("../images/layout/pc_ham_bg.png") no-repeat right top -80px;
+    // visibility: hidden;
+    // opacity: 0;
+    .submenu {
+      width: 95%;
+      .depth01 {
+        display: flex;
+        justify-content: center;
+        gap: 0 10px;
+
+        > li {
+          // display: block;
+          width: 255px;
+          // height: 460px;
+          border-radius: 30px;
+          border: solid 1px rgba(224, 223, 226, 0.6);
+          padding: 50px 30px;
+          background-color: #fff;
+          transition: transform 0.6s;
+          &:hover {
+            box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+            transform: translateY(-10px);
+          }
+          &:hover > a {
+            color: #e0462e;
+            font-weight: 500;
+          }
+          > a {
+            display: block;
+
+            line-height: 1;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: -1.6px;
+            padding-bottom: 40px;
+            &:hover {
+              color: #e0462e;
+              font-weight: 500;
+            }
+            .font_bingblod {
+              font-family: Binggrae-Bold;
+            }
+          }
+          .depth02 {
+            > li {
+              &:hover {
+                color: #e0462e;
+                font-weight: 500;
+                background: url("../images/layout/pc_ham_hover_img.png")
+                  no-repeat right center;
+              }
+              > a {
+                font-size: 18px;
+                display: block;
+                &:hover {
+                  color: #e0462e;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+      .depth03 {
+        padding-top: 15px;
+        > li {
+          > a {
+            color: rgba(52, 52, 52, 0.8);
+            font-size: 15px;
+            font-weight: 300;
           }
         }
       }
