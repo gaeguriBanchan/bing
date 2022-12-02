@@ -1,9 +1,20 @@
-// .visual {
-//   .visual-back {
-//     width: 100vw;
-//     height: ;
-//     background-image: url("../images/main/pc_section01_3.jpg");
-//   }
-//   .visual-img {
-//   }
-// }
+.visual {
+  position: relative;
+  display: block;
+  /* max-width: 1650px; */
+  width: 100%;
+  margin: 0 auto;
+  // border: 5px solid red;
+}
+.visual-back {
+  max-height: 964px;
+  padding: 10.9vw 0;
+  background: url("../images/main/pc_section01_3.jpg") no-repeat center;
+  background-size: cover;
+
+  text-align: center;
+}
+.pc-visual {
+  width: 100%;
+  max-width: 1328px;
+}

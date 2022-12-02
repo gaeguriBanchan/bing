@@ -282,6 +282,7 @@ body .fixed {
   margin-top: 8px;
 }
 .header .hambuger_menu {
+  visibility: hidden;
   position: absolute;
   left: 0;
   top: 0;
@@ -355,6 +356,27 @@ body .fixed {
 }
 
 /* Visual */
+.visual {
+  position: relative;
+  display: block;
+  /* max-width: 1650px; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.visual-back {
+  max-height: 964px;
+  padding: 10.9vw 0;
+  background: url("../images/main/pc_section01_3.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.pc-visual {
+  width: 100%;
+  max-width: 1328px;
+}
+
 /* Search */
 .search {
   position: relative;
@@ -363,6 +385,7 @@ body .fixed {
   height: 140px;
   margin-bottom: 190px;
   max-width: 1020px;
+  background-color: #f9f5f2;
 }
 .search .search-top {
   display: flex;
