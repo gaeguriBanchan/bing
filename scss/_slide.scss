@@ -57,7 +57,8 @@
       margin-bottom: 48px;
     }
     .slide-layout {
-      // display: flex;
+      position: relative;
+      display: flex;
       align-items: center;
       max-width: 1750px;
       max-height: 300px;
@@ -73,22 +74,31 @@
       .slide-brand-list {
         display: flex;
         width: 100%;
+        height: 100%;
         gap: 18px;
-        justify-content: center;
+        flex-grow: 1;
+        justify-content: space-between;
+
+        .mo {
+          display: none;
+        }
         > li {
           display: flex;
-          width: 100%;
-          width: 242px;
+          max-width: 242px;
           height: 250px;
           border: 1px solid #edecef;
           border-radius: 30px;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 1;
           > a {
             display: flex;
             justify-content: center;
-            width: 100%;
+            max-width: 242px;
+            max-height: 250px;
             margin: auto;
             > img {
-              width: 60%;
+              width: 80%;
             }
           }
         }
@@ -97,12 +107,131 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .slide-layout > img {
-    display: none;
+  .slide-goods {
+    position: relative;
+    display: block;
+    .slide-goods-title {
+      font-size: 22px !important;
+      margin-bottom: 30px !important;
+    }
+    p {
+      padding: 15px 0 !important;
+      margin: 0 !important;
+      font-size: 16px;
+      background-color: #fff !important;
+    }
+    a {
+      padding: 15px 0 !important;
+    }
+    .goods-wrap {
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-shrink: 1;
+      .slide-layout {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 768px;
+        max-height: 705px;
+        margin: 0 auto;
+        // flex-shrink: 1 !important;
+        margin: 0 25px;
+        // background-color: yellow;
+        > img {
+          display: none;
+        }
+      }
+    }
+    .slide-goods-list {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-height: 705px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+      flex-basis: 33%;
+      // flex-shrink: 1;
+
+      > li {
+        position: relative;
+        max-width: 235px;
+        max-height: 280px;
+        padding: 0;
+        margin: 0;
+        // flex-shrink: 1;
+        > img {
+          width: 100%;
+          margin: 0 !important;
+        }
+      }
+    }
   }
-  .slide-goods-list,
-  .slide-brand-list {
-    flex-wrap: wrap;
-    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .slide-brand {
+    position: relative;
+    display: block;
+    .slide-brand-title {
+      position: relative;
+      display: block;
+      font-size: 22px !important;
+    }
+    > .slide-layout {
+      position: relative;
+      display: block;
+      max-width: 768px;
+      max-height: 600px;
+      // background-color: yellow;
+      > img {
+        position: relative;
+        display: none;
+      }
+      .slide-brand-list {
+        width: 100%;
+        max-height: 600px !important;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-content: center !important;
+        flex-direction: column !important;
+        flex-basis: 33%;
+        margin-top: 70px;
+        // background-color: yellow;
+        > li {
+          display: flex;
+          flex-shrink: 1;
+          flex-direction: row;
+          width: 235px;
+          max-height: 490px;
+          flex-basis: 33%;
+          align-content: space-between;
+          flex-basis: 33% !important;
+          > a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 33% !important;
+            flex-shrink: 1 !important;
+            .mo {
+              position: relative;
+              display: block !important;
+              width: 235px !important;
+              height: 100%;
+              flex-shrink: 1 !important;
+              flex-basis: 33%;
+            }
+          }
+        }
+        .pc {
+          display: none !important;
+        }
+      }
+    }
   }
 }
