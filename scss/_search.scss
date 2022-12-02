@@ -66,6 +66,9 @@
   }
 }
 @media screen and (max-width: 1260px) {
+  .search {
+    margin-bottom: 100px;
+  }
   .search-top {
     max-width: 85vw;
     max-height: 60px;
@@ -74,7 +77,10 @@
     max-height: 45px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+  .search {
+    margin-bottom: 50px;
+  }
   .search-top {
     max-width: 75vw;
     max-height: 45px;

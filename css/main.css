@@ -441,6 +441,9 @@ body .fixed {
 }
 
 @media screen and (max-width: 1260px) {
+  .search {
+    margin-bottom: 100px;
+  }
   .search-top {
     max-width: 85vw;
     max-height: 60px;
@@ -449,7 +452,10 @@ body .fixed {
     max-height: 45px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+  .search {
+    margin-bottom: 50px;
+  }
   .search-top {
     max-width: 75vw;
     max-height: 45px;
@@ -634,6 +640,7 @@ body .fixed {
     position: relative;
     display: block;
     font-size: 22px !important;
+    margin-top: 100px !important;
   }
   .slide-brand > .slide-layout {
     position: relative;
