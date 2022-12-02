@@ -112,6 +112,7 @@
     display: block;
     .slide-goods-title {
       font-size: 22px !important;
+      margin-bottom: 30px !important;
     }
     p {
       padding: 15px 0 !important;
@@ -176,6 +177,7 @@
     .slide-brand-title {
       position: relative;
       display: block;
+      font-size: 22px !important;
     }
     > .slide-layout {
       position: relative;
@@ -197,6 +199,7 @@
         align-content: center !important;
         flex-direction: column !important;
         flex-basis: 33%;
+        margin-top: 70px;
         // background-color: yellow;
         > li {
           display: flex;

@@ -460,6 +460,7 @@ body .fixed {
   }
   .slide-goods .slide-goods-title {
     font-size: 22px !important;
+    margin-bottom: 30px !important;
   }
   .slide-goods p {
     padding: 15px 0 !important;
@@ -519,6 +520,7 @@ body .fixed {
   .slide-brand .slide-brand-title {
     position: relative;
     display: block;
+    font-size: 22px !important;
   }
   .slide-brand > .slide-layout {
     position: relative;
@@ -540,6 +542,7 @@ body .fixed {
     align-content: center !important;
     flex-direction: column !important;
     flex-basis: 33%;
+    margin-top: 70px;
   }
   .slide-brand > .slide-layout .slide-brand-list > li {
     display: flex;
