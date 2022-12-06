@@ -1126,6 +1126,6 @@ body .fixed {
   cursor: pointer;
   border: 0;
 }
-.fixmenu .fixmenu-bottom:active {
-  transform: rotate(0deg);
+.fixmenu .fixmenu-bottom.active {
+  transform: none;
 }

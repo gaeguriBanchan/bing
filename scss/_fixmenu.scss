@@ -29,7 +29,7 @@
         cursor: pointer;
         border: 0;
     }
-    .fixmenu-bottom:active {
-        transform: rotate(0deg);
+    .fixmenu-bottom.active {
+        transform: none;
     }
 }
