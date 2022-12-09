@@ -97,8 +97,15 @@
     <!-- css 초기화 -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- anime -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js -->
     <script src="js/fixmenu.js" defer></script>
+    <script src="js/qna.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -486,7 +493,8 @@
         </div>
       </section>
       <!-- Qna -->
-      <section class="qna">
+      <section class="qna" >
+        <div data-aos="fade-up" data-aos-duration="1500">
         <div class="qna-inner">
           <div class="qna-title">고객문의 및 불편사항</div>
           <div class="qna-main">
@@ -557,9 +565,11 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
       <!-- Report -->
       <section class="report">
+        <div data-aos="fade-up" data-aos-duration="1500">
         <div class="report-innner">
           <div class="report-title">빙그레 임직원 및 종사자 온라인제보</div>
           <div class="report-main">
@@ -574,6 +584,7 @@
               <span>안전신문고</span>
             </div>
           </div>
+        </div>
         </div>
       </section>
       <!-- Footer -->
